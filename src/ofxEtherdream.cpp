@@ -60,7 +60,7 @@ void ofxEtherdream::init() {
     ofLogNotice() << "ofxEtherdream::init - Connecting...";
     if (device == NULL || etherdream_connect(device) < 0) {
         ofLogWarning() << "ofxEtherdream::init - No DACs found";
-        return 1;
+        return;
     }
 
     ofLogNotice() << "ofxEtherdream::init - done";
